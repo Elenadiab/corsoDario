@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Cinema Immaginazione</h1>
+<p>Film in sala</p>
+
+
+<div id = "singoloFilm">
+    <h3 id="titoloFilm">
+    </h3>
+    <div id="container">
+    
+
+
+    
+
+        <div class="boxSn">
+            <img src="" alt="" id="locandinaFilm">
+        </div>
+
+        <div class="boxDx">
+
+            <p>Attori :
+                <ul id="attoriFilm"></ul>
+            </p>
+            <p id="registaFilm"></p>
+            <p id="durataFilm"></p>
+            <p id="prezzoFilm"></p>
+
+            <div class="btnAI">
+                <button id="btnIndietro">Indietro</button>
+                <button id="btnAvanti">Avanti</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    
+
+
+</div>
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              AGGIUNGI FILM                              -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<div>
+
+    <h2>Inserisci i nuovi film in programmazione</h2>
+
+    <input type="text" id="titolo" placeholder="Titolo"><br>
+    <input type="text" id="locandina" placeholder="Locandina"><br>
+
+
+    <input type="text" id="attore" placeholder="Attori">
+
+    <button onclick="aggiungiAttori()"> + </button><br>
+
+
+    <input type="text" id="regista" placeholder="Regista"><br>
+    <input type="text" id="durata" placeholder="Durata"><br>
+    <input type="text" id="prezzo" placeholder="Prezzo"><br>
+
+    <button onclick="aggiungiFilm()">Aggiungi Film</button>
+
+
+</div>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           FINE AGGIUNGI FILM                            -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                          SCHEDINA DI ANTEPRIMA                          -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+<div id = "singoloAnteprima" >
+    <h3 id="titoloAnteprima"  >
+    </h3>
+    <div id="containerAnteprima" >
+    
+
+
+    
+
+        <div class="boxSn">
+            <img src="" alt="" id="locandinaAnteprima" >
+        </div>
+
+        <div class="boxDx">
+
+            <p>
+                <ul id="attoriFilmAnteprima" ></ul>
+            </p>
+            <p id="registaFilmAnteprima" ></p>
+            <p id="durataFilmAnteprima" ></p>
+            <p id="prezzoFilmAnteprima"></p>
+
+            
+
+        </div>
+        
+    </div>
+
+    
+
+
+</div>
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              FINE SCHEDINA                              -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+<script src="script.js"></script>
+<script src="scriptInserimento.js"></script>
+
+
+
+</body>
+</html>

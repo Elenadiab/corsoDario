@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+    <h1>Foreach</h1>
+
+
+    <p id = demo></p>
+
+    <script>
+        let persone = ["Alessandro", "Elena", "Paolo", "Tamara"];
+
+        let studenti = new Array("pipo","paolo","paperino");
+
+        for(let i =0; i < persone.length; i++){
+            console.log(persone[i]);
+        }
+
+        persone.forEach((persona, i) => {
+            console.log(persona + " indice: " + i);
+            
+        })
+
+        
+        let mieiStudenti = [
+            {
+                nome: "Elena",
+                matricola: "5",
+                presenza: true
+            },
+
+            {
+                nome: "Marco",
+                matricola: "53",
+                presenza: true
+            },
+
+            {
+                nome: "Fabio",
+                matricola: "6",
+                presenza: false
+            }
+
+                
+
+
+        ];
+
+        // mieiStudenti.forEach (studente =>{
+        //     console.log(studente.matricola)
+        //     if(studente.presenza  == false){
+        //         console.log(studente.nome + " è assente")
+        //     }
+
+        // }
+        // )
+
+        let demo = document.querySelector("#demo");
+        
+        mieiStudenti.forEach(studente => {
+            let p = document.createElement("p");
+
+            if(studente.presenza == false){
+                p.setAttribute("class","red")
+                p.textContent = `${studente.nome} mat: ${studente.matricola} Assente`
+            }else{
+                p.textContent = `${studente.nome} mat: ${studente.matricola} Presente`
+            }
+
+            demo.appendChild(p);
+        });
+
+
+        
+
+
+
+
+
+
+    </script>
+
+
+    
+
+
+</body>
+</html>

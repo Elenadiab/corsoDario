@@ -1,0 +1,21 @@
+.red {
+    color: red;
+}
+
+
+.card{
+    border: 3px dotted cadetblue;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 15px;
+    text-align: center;
+}
+
+.imgCard{
+    width: 60%;
+    height: auto;
+    margin: 4% 20%;
+}
+
+

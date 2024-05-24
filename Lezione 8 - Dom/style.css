@@ -1,0 +1,53 @@
+.txtRed{
+    color: darkred;
+}
+
+.txtBlue{
+    color: blue;
+}
+
+
+#lampadina, #lampadina2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.bgYellow{
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+.bgRed{
+    background-color: red !important;
+}
+
+.bgCyan{
+    background-color: cyan !important;
+}
+
+.bgTransparent{
+    background-color: transparent;
+}
+
+
+.borderDouble{
+    border: 10px dotted black !important;
+
+}
+
+
+.barrato{
+    text-decoration: line-through;
+}
+
+.sottolineato{
+    text-decoration: underline;
+}

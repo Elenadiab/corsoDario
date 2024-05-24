@@ -1,0 +1,30 @@
+{
+  
+  "studenti": [
+    {
+      "id": "0",
+      "nome": "Marco"
+    },
+    {
+      "id": "1",
+      "nome": "Luisa"
+    },
+    {
+      "id": "2",
+      "nome": "Paola"
+    },
+    {
+      "id": "3",
+      "nome": "Gennarino"
+    },
+    {
+      "id": "4",
+      "nome": "Noemi"
+    },
+    {
+      "id": "34",
+      "nome": "Elena"
+    }
+  ],
+  "admin": "Jacopo"
+}

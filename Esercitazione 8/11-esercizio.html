@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>testo che cambia colore</h1>
+
+    <p id="testoDaCambiare" class="cambiaColore" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in numquam laboriosam voluptates tempore at libero aperiam vitae, dolores accusantium natus ratione, cum voluptas iusto harum quae neque velit totam!</p>
+
+    <div>
+        <button onclick="cambiaColore()">cambia
+        </button>
+    </div>
+
+
+    <script>
+        function cambiaColore(){
+            let testoDaColorare = document.getElementById("testoDaCambiare");
+            testoDaColorare.setAttribute("class", "cambiaColore");
+
+        }
+
+        cambiaColore();   ///Non funziona
+
+
+
+    </script>
+
+    
+
+
+    
+</body>
+</html>

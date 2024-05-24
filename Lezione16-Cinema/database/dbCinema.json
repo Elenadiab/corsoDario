@@ -1,0 +1,110 @@
+{
+    "spettacoli":[
+
+        {   
+            "id":1,
+            "titolo":"Dune 2",
+            "locandina": "https://pad.mymovies.it/filmclub/2021/10/212/locandinapg2.jpg",
+            "durata":166,
+            "prezzo":6.50,
+            "replica": [
+                {
+                    "sala": "Sala 1 - IMAX",
+                    "orario":"20:30"
+                },
+                {
+                    "sala":"Sala 2 - O.V.",
+                    "orario": "21:00"
+                },
+                {
+                    "sala":"Sala 1 - IMAX",
+                    "orario":"23:00"
+                }
+            ],
+
+            "scadenza":"22/03/2024",
+            "disponibilita":true
+        },
+
+        {   
+            "id":2,
+            "titolo":"LA ZONA D'INTERESSE",
+            "locandina": "https://pad.mymovies.it/filmclub/2023/03/023/locandinapg1.jpg",
+            "durata":105,
+            "prezzo":10.50,
+            "replica": [
+                {
+                    "sala": "Sala 1 - IMAX",
+                    "orario":"20:30"
+                },
+                {
+                    "sala":"Sala 2 - O.V.",
+                    "orario": "21:00"
+                },
+                {
+                    "sala":"Sala 1 - IMAX",
+                    "orario":"23:00"
+                }
+            ],
+
+            "scadenza":"22/03/2024",
+            "disponibilita":true
+        },
+        {   
+            "id":3,
+            "titolo":"CARACAS",
+            "locandina": "https://pad.mymovies.it/filmclub/2022/07/087/locandina.jpg",
+            "durata":125,
+            "prezzo":9.50,
+            "replica": [
+                {
+                    "sala": "Sala 1 - IMAX",
+                    "orario":"20:30"
+                },
+                {
+                    "sala":"Sala 2 - O.V.",
+                    "orario": "21:00"
+                },
+                {
+                    "sala":"Sala 1 - IMAX",
+                    "orario":"23:00"
+                }
+            ],
+
+            "scadenza":"22/03/2024",
+            "disponibilita":true
+        },
+        {   
+            "id":4,
+            "titolo":"PINOCCHIO",
+            "locandina": "https://pad.mymovies.it/filmclub/2018/10/183/locandinapg1.jpg",
+            "durata":125,
+            "prezzo":9.50,
+            "replica": [
+                {
+                    "sala": "Sala 1 - IMAX",
+                    "orario":"20:30"
+                },
+                {
+                    "sala":"Sala 2 - O.V.",
+                    "orario": "21:00"
+                },
+                {
+                    "sala":"Sala 1 - IMAX",
+                    "orario":"23:00"
+                }
+            ],
+
+            "scadenza":"22/03/2023",
+            "disponibilita":false
+        }
+
+    ],
+    "bigliettiAcquistati":[
+        {
+            "nome":"Dario Mennillo",
+            "spettacolo":"Dune - Sala 1 Imax - 20.30",
+            "pagamento":true
+        }
+    ]
+}

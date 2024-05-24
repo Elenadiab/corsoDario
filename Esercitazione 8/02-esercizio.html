@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>FORM</h1>
+
+   <form id="mioForm">
+
+   
+    <input type="text" id="nome">
+
+    
+    <input type="text" id="cognome">
+    
+   </form>
+
+   <button onclick="mostraDati()">Invia Dati</button>
+
+    <div id="demo"></div>
+
+
+    <script>
+
+            function mostraDati (){
+            let nome = document.getElementById("nome").value;
+            let cognome = document.getElementById("cognome").value;
+            console.log(nome + " " + cognome);
+            demo.innerHTML = nome + " " + cognome;
+        }
+
+
+
+        
+
+
+
+    </script>
+
+    
+</body>
+</html>

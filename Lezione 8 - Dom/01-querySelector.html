@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <div id="demo">
+        <h2>Lista Della Spesa</h2>
+        <ul id="lista">
+
+           <li id="uno">Nutella</li>
+           <li id="due">Pasta</li>
+           <li id="tre">Carne</li>
+           <li id="quattro">Pesce</li>
+           <li id="cinque">Insalata</li>
+           <li id="sei">Farina</li>
+           
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+            //seleziono un elemento
+        let uno = document.querySelector("#uno");
+
+        let due = document.querySelector("#due");
+
+        //leggere il contenuo. InnerHTML legge e scrive 
+        let contenuto1 = uno.innerHTML;
+        console.log(contenuto1);
+
+        let contenuto1bis = uno.textContent;
+        console.log(contenuto1bis);
+
+        let demo = document.querySelector("#demo");
+        console.log(demo);
+
+        let li = document.querySelector("li");
+        console.log(li); //recupera solo il primo elementi
+
+        let ul = document.querySelector("ul");
+        console.log(ul);
+
+        let figliUl = ul.children;
+        console.log(figliUl);
+
+        //voglio stampare i singoli contenuti negli li
+        for (let i=0; i < figliUl.length; i++){
+            console.log(figliUl[i].textContent)
+        }
+
+
+
+    </script>
+
+    
+</body>
+</html>

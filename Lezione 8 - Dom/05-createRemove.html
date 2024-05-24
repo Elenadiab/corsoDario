@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <div id="demo">
+        <h2>Lista Della Spesa</h2>
+        <ul id="lista">
+           <li class = "txtRed" id="due">Pasta</li>
+           <li class = "txtRed" id="tre">Carne</li>
+           <li class = "txtRed" id="quattro">Pesce</li>
+           <li class = "txtRed" id="cinque">Insalata</li>
+           <li class = "txtRed" id="sei">Farina</li>
+           
+        </ul>
+    </div>
+
+
+    <script>
+        // aggiungere elemento
+        let lista = document.querySelector("#lista");
+       /*  lista.innerHTML += "<li> Acqua </li>"; */
+
+       let li = document.createElement("li");
+        li.textContent = "Acqua";
+
+        //aggancio questo li al mio ul#lista
+
+        li.onclick = function (){
+            this.setAttribute("class", "txtRed");
+        }
+
+        lista.appendChild(li);
+
+
+        //togliere un elemento
+        //parent.removeElement(child);
+        // lista.removeChild(li);
+
+        //rimuvo un child centrale
+        lista.removeChild(lista.children[2]);
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

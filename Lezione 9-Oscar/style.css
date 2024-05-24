@@ -1,0 +1,36 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    
+    
+}
+
+.boxDx{
+    margin-left: 20px;
+    
+}
+
+
+img {
+    max-width: 80%;
+}
+
+
+ul{
+    margin-left: -2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

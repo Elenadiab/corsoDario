@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="demo">
+        <h2>Lista Della Spesa</h2>
+        <ul id="lista">
+           <li class = "txtRed" id="due">Pasta</li>
+           <li class = "txtRed" id="tre">Carne</li>
+           <li class = "txtRed" id="quattro">Pesce</li>
+           <li class = "txtRed" id="cinque">Insalata</li>
+           <li class = "txtRed" id="sei">Farina</li>
+           
+        </ul>
+    </div>
+
+
+    <div id="feed">
+        <h2>Lista Libri</h2>
+        <ul id="listaLibri">
+
+           <li>Harry Potter</li>
+           <li>Potter Pasta</li>
+           <li>Chi viene a cena</li>
+           <li>Peesciolina</li>
+           <li>Insalatina</li>
+           <li>Acqua sale Farina</li>
+           
+        </ul>
+    </div>
+
+
+
+        <div id="galleria">
+            <img src="" alt="">
+
+        </div>
+
+    <script>
+        //cambio il collore ai libri
+        let libriLI = document.querySelectorAll("#listaLibri");
+        for (let i = 0; i < libriLI.length; i++ ){
+
+            libriLI[i].setAttribute("class", "txtBlue");
+
+
+        }
+
+        let titoloLibri = document.querySelector("#feed h2");
+        titoloLibri.setAttribute("class", "txtBlue")
+
+
+
+        let lisSpesa = document.querySelectorAll("#lista li");
+
+        lisSpesa[1].setAttribute("class", "txtBlue");
+
+        for(let i = 0; i < lisSpesa.length; i++){
+            if(i % 2 != 0){
+                lisSpesa[i].setAttribute("class","txtBlue");
+            }
+        }
+
+
+        let img = document.querySelector("#galleria img");
+        img.setAttribute("src", "https://source.unsplash.com/300x300?torino");
+        img.setAttribute("alt","veduta di torino");
+
+        //tolgo l attributo class dalla lista della spesa
+
+        for(let i =0; i< lisSpesa.length; i++){
+            lisSpesa[i].removeAttribute("class")
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

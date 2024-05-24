@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <!-- COMPITO : crare un bottone x cancellare un elemento -->
+    
+    <h1>To Do List</h1>
+
+    <input type="text" id="item" placeholder="to do....">
+    <button id="btn">Inserisci</button>
+
+    <ul id="listaToDo"></ul>
+
+
+    <script>
+
+
+
+        function Item(valore,data){
+            this.valore = valore;
+            this.data = data;
+        }
+
+
+        let listaItems = [];
+
+
+
+        let btn = document.querySelector("#btn");
+        let listaToDo = document.querySelector("#listaToDo");
+
+
+
+        function aggiungi() {
+            let valore = document.querySelector("#item").value;
+
+            let item = new Item(valore,0)
+            listaItems.push(item);
+
+            let li = document.createElement("li");
+            li.textContent = item.valore;
+
+            
+
+            li.onclick = function () {
+                this.setAttribute("class", "barrato");
+            }
+
+
+            let btnDel = document.createElement("button");
+            btnDel.textContent = " X ";
+
+            li.appendChild(btnDel);
+
+            btnDel.onclick = function (){
+                listaToDo.removeChild(li);
+            }
+
+
+            listaToDo.appendChild(li);
+
+        }
+        
+        btn.onclick = aggiungi;
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
